@@ -1,7 +1,6 @@
 import 'dart:async';
-
+import 'package:diffrent_language_project/Authpage/cookiesPage.dart';
 import 'package:flutter/material.dart';
-
 
 class emailPage extends StatefulWidget {
   const emailPage({super.key});
@@ -18,7 +17,9 @@ class _emailPageState extends State<emailPage> {
   @override
   void  initState() {
     super.initState();
-    timer = Timer.periodic(Duration(seconds: 5), (Timer timer) {
+    timer = Timer.periodic(
+      Duration(seconds: 5
+      ), (Timer timer) {
       setState(() {
         CurrentPage = (CurrentPage + 1) % iamgeUrls.length;
       });
@@ -57,21 +58,15 @@ body:
        fit: BoxFit.fitHeight,
        ),
               ),
-      
-      
-      
-      
-      
-       
-      
+            
       Positioned(
-      top: 500,
+      top: 570,
        left: 0,
        right: 0,
       child:Opacity(
        opacity:0.9,
         child: Container(
-            height: 560,
+            height: 460,
             width:392,
          decoration: BoxDecoration(borderRadius: BorderRadius.circular(70),
          color: Color.fromARGB(255, 243, 248, 252),
@@ -127,18 +122,19 @@ body:
                   ),
        
            Text('Retour',
-           style: TextStyle(fontWeight: FontWeight.bold),
-           
-           )
-           
+           style: TextStyle(fontWeight: FontWeight.bold,
+           color: Colors.black,
+           ),
+                      )
                 ],),
                 ),
            SizedBox(width: 180,),
-             TextButton(onPressed: (){
-
+             TextButton(
+              onPressed: (){
+Navigator.push(context, MaterialPageRoute(builder:(context) => cookiesPage(),));
             }, child: Row(children: [
              
-           Text('Retour',
+           Text('Suivant',
            style: TextStyle(fontWeight: FontWeight.bold,
            color: Colors.green
            ),
