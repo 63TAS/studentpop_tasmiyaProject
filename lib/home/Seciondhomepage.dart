@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class SecondhomePage extends StatelessWidget {
+  const SecondhomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-        SizedBox(height: 30,),
+body: SingleChildScrollView(
+  child:   Column(children: [
+   SizedBox(height: 30,),
          Container(
         height:70,
           color: Color.fromARGB(255, 53, 183, 197),
@@ -80,7 +78,35 @@ SizedBox(width: 20),
 
 
 // ),
-SizedBox(height: 10,),
+
+Container(
+ height: 50,
+ width: 350,
+  decoration: BoxDecoration(borderRadius: BorderRadius.circular(6),
+  color: Color.fromARGB(255, 53, 183, 197)
+  ),
+  child: Row(
+    children: [
+ SizedBox(width: 20,),
+
+  Icon(Icons.mode_edit_outline,
+ color: Colors.white, 
+  ),
+
+SizedBox(width: 20,),
+Text('Adhe`rer `a la pre`voyance',
+style: TextStyle(color: Colors.white),
+),
+SizedBox(width: 90,),
+Icon(Icons.arrow_forward_ios,
+color: Colors.white,
+)
+]),),
+
+
+
+
+SizedBox(height: 20,),
   Container(
   height: 70,
   width: 350,
@@ -89,10 +115,10 @@ SizedBox(height: 10,),
     ),
     child: Row(children: [
   SizedBox(width: 20,),
-    Icon(Icons.center_focus_strong),
+    Icon(Icons.movie_creation_rounded),
     SizedBox(width: 10,),
-    Text('Centre d` aide'),
-  SizedBox(width:170,),
+    Text('Mes informations de paiment'),
+  SizedBox(width:70,),
     Icon(Icons.arrow_forward_ios_outlined)
   ]),),
   SizedBox(height: 10,),
@@ -104,10 +130,14 @@ SizedBox(height: 10,),
     ),
     child: Row(children: [
    SizedBox(width: 20,),
-    Icon(Icons.telegram),
+    Icon(Icons.email),
    SizedBox(width: 10,),
-    Text('Rec`lamations /Suggestions'),
+    Text('Email et te`le`phon'),
     // Icon(Icons.arrow_forward_ios_outlined)
+ 
+  SizedBox(width:130,),
+    Icon(Icons.arrow_forward_ios_outlined)
+
   ]),),
   SizedBox(height: 10,),
     Container(
@@ -119,13 +149,13 @@ SizedBox(height: 10,),
     child: Row(children: [
        SizedBox(width: 20,),
 
-    Icon(Icons.phone),
+    Icon(Icons.person),
         SizedBox(width: 10,),
 
-    Text('Appel d`urgence'),
-       SizedBox(width: 170,),
+    Text('Modifier ma photo'),
+       SizedBox(width: 130,),
 
-    // Icon(Icons.arrow_forward_ios_outlined)
+    Icon(Icons.arrow_forward_ios_outlined)
   ]),),
   SizedBox(height: 10,),
   Container(
@@ -137,11 +167,11 @@ SizedBox(height: 10,),
     child: Row(
       children: [
     SizedBox(width: 20,),
-    Icon(Icons.handshake_sharp),
+    Icon(Icons.book),
        SizedBox(width: 10,),
 
-    Text('Mon contract cadre Student Pop'),
-       SizedBox(width: 40,),
+    Text('E`tudes et experiences'),
+       SizedBox(width: 100,),
 
     Icon(Icons.arrow_forward_ios_outlined)
   ]),),
@@ -156,17 +186,17 @@ SizedBox(height: 10,),
     child: Row(
       children: [
     SizedBox(width: 20,),
-    Icon(Icons.check_circle),
+    Icon(Icons.favorite),
        SizedBox(width: 10,),
 
-    Text('CGU de I`application'),
-       SizedBox(width: 120,),
+    Text('Mes pre`f`ereces de missons'),
+       SizedBox(width: 60,),
 
     Icon(Icons.arrow_forward_ios_outlined)
   ]),),
  
 
-  SizedBox(height: 10,),
+   SizedBox(height: 10,),
   Container(
    height: 70,
    width: 350,
@@ -176,31 +206,11 @@ SizedBox(height: 10,),
     child: Row(
       children: [
     SizedBox(width: 20,),
-    Icon(Icons.security),
+    Icon(Icons.file_copy),
        SizedBox(width: 10,),
 
-    Text('Assurance civile professionnelle'),
-       SizedBox(width: 50,),
-
-    Icon(Icons.arrow_forward_ios_outlined)
-  ]),),
- 
-
-  SizedBox(height: 10,),
-  Container(
-   height: 70,
-   width: 350,
-    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-    color: Colors.grey.shade200,
-    ),
-    child: Row(
-      children: [
-    SizedBox(width: 20,),
-    Icon(Icons.bar_chart),
-       SizedBox(width: 10,),
-
-    Text('Cookies & inofs perso'),
-       SizedBox(width: 110,),
+    Text('Mes factures'),
+       SizedBox(width: 160,),
 
     Icon(Icons.arrow_forward_ios_outlined)
   ]),),
@@ -219,12 +229,17 @@ style: TextStyle(fontWeight: FontWeight.bold,
 decoration:TextDecoration.underline, 
 
 ),
-)
+),
 
 
     ]),
-   
-   
-    ])));
+ 
+  Container(height: 100,
+  )  
+  
+  ]),
+),
+
+    );
   }
 }

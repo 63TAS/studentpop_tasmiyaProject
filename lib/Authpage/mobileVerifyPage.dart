@@ -1,3 +1,4 @@
+import 'package:diffrent_language_project/home/HomePage.dart';
 import 'package:flutter/material.dart';
 
 class MobileVerifypage extends StatefulWidget {
@@ -163,19 +164,24 @@ Padding(
 SizedBox(height: 350,),
     Opacity(
      opacity: 0.7,
-      child: Container(
-        height: 60,
-        width: 393,
-        color: Colors.grey.shade400,
-        child: Align(
-    alignment: Alignment.center,
-          child: Text('Continuer',
-            style: TextStyle(color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            ),
-            ),
-        ),),
+      child: InkWell(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder:(context) => HomePage(),));
+        },
+        child: Container(
+          height: 60,
+          width: 393,
+          color: Colors.grey.shade400,
+          child: Align(
+          alignment: Alignment.center,
+            child: Text('Continuer',
+              style: TextStyle(color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              ),
+              ),
+          ),),
+      ),
     )
     
     

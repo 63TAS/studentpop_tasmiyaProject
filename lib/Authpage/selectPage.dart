@@ -36,8 +36,7 @@ class SelectPage extends StatelessWidget {
  Container(
               height:100,
               child: Image.network(
-                'https://img.freepik.com/premium-photo/black-graduation-hat-gavel-concept-graduate-online-learning-study-international_43157-4586.jpg',
-             
+                'https://p.kindpng.com/picc/s/193-1935750_graduation-cap-png-transparent-college-graduation-hat-png.png', 
                 ),
                                           ),
        
